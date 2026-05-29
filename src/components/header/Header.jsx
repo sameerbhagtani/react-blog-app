@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 
 import { Container, Logo, LogoutBtn } from "../index";
 
-function Header() {
+export default function Header() {
     const authStatus = useSelector((state) => state.auth.status);
     const navigate = useNavigate();
 
@@ -71,5 +71,3 @@ function Header() {
         </header>
     );
 }
-
-export default Header;
